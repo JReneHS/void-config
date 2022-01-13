@@ -1,0 +1,16 @@
+# Lines configured by zsh-newuser-install
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:$HOME/.local/bin"
+. "$HOME/.cargo/env"
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+# End of lines configured by zsh-newuser-install
+alias ls="exa --all --all --long --git --grid"
+alias ll="exa --all --long --git --tree --level=2"
+alias vim="nvim"
+alias -s rs=nvim
+alias -s gcc=nvim
+alias sbrain="cd ~/Obsidian/MySecondBrain"
+alias gitKey="cat ~/Documentos/gitKey"
