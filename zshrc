@@ -2,10 +2,11 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.Programs/deno/target/debug"
+export PATH=/home/gio/.nimble/bin:$PATH
+
 . "$HOME/.cargo/env"
 # Path to your oh-my-zsh installation.
 export ZSH="/home/gio/.oh-my-zsh"
-
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -72,7 +73,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git cargo golang rust rustup history dirhistory web-search sudo)
+plugins=(git golang rust history dirhistory web-search sudo)
 
 source $ZSH/oh-my-zsh.sh
 
