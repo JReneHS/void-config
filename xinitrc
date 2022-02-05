@@ -50,10 +50,15 @@ fi
 
 setxkbmap us -v dvp -option compose:102 -option numpad:shift3 -option kpdl:semi -option keypad:atm -option caps:shift &
 
-#nitrogen --restore &
+ln -sf /usr/share/zoneinfo/America/Mexico_City /etc/localtime &
+export TZ=America/Mexico_City &
+
+nitrogen --restore &
 
 dwmblocks &
 
 clipmenud &
+
+telegram-desktop &
 
 exec dwm
